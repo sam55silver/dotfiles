@@ -116,13 +116,31 @@ require('lazy').setup({
   --   end,
   -- },
 
+  -- {
+  --   "folke/tokyonight.nvim",
+  --   lazy = false,
+  --   priority = 1000,
+  --   opts = {},
+  --   config = function()
+  --     vim.cmd.colorscheme 'tokyonight-moon'
+  --   end
+  -- },
+
+  -- {
+  --   "rebelot/kanagawa.nvim",
+  --   priority = 1000,
+  --   opts = {},
+  --   config = function()
+  --     vim.cmd.colorscheme 'kanagawa-wave'
+  --   end
+  -- },
+
   {
-    "folke/tokyonight.nvim",
-    lazy = false,
+    "catppuccin/nvim",
     priority = 1000,
     opts = {},
     config = function()
-      vim.cmd.colorscheme 'tokyonight-moon'
+      vim.cmd.colorscheme 'catppuccin-mocha'
     end
   },
 
@@ -419,9 +437,10 @@ end
 --  Add any additional override configuration in the following tables. They will be passed to
 --  the `settings` field of the server config. You must look up that documentation yourself.
 local servers = {
-  -- clangd = {},
-  -- gopls = {},
-  -- pyright = {},
+  clangd = {},
+  gopls = {},
+  pyright = {},
+  tailwindcss = {},
   -- rust_analyzer = {},
   -- tsserver = {},
 

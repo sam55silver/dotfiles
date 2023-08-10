@@ -112,3 +112,9 @@ source $ZSH/oh-my-zsh.sh
 
 alias ls='colorls'
 alias lvim='/Users/ssilver/.local/bin/lvim'
+alias flushDNS='sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder'
+
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
