@@ -106,6 +106,10 @@ require('lazy').setup({
       end,
     },
   },
+  {
+    'christoomey/vim-tmux-navigator',
+    lazy = false,
+  },
 
   -- {
   --   -- Theme inspired by Atom
