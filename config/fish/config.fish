@@ -3,5 +3,5 @@ if status is-interactive
     fish_vi_key_bindings
 end
 
-set PATH "$PATH:/usr/local/nvim/bin"
+set PATH $PATH /usr/local/nvim/bin $HOME/.cargo/bin
 
