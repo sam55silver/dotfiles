@@ -4,4 +4,4 @@ if status is-interactive
 end
 
 set PATH $PATH /usr/local/nvim/bin $HOME/.cargo/bin
-
+source ~/.asdf/asdf.fish
